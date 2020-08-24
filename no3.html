@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>No. 3</title>
+</head>
+<body>
+	<h3>Jawaban di console</h3>
+	<script>
+		beratIdeal = (tinggiBadan, beratBadan) =>{
+			return beratBadan/((tinggiBadan/100)**2);
+		}
+		console.log("BMI dari Rhodey adalah: " + beratIdeal(170, 90));
+		if(beratIdeal() < 18.5){
+			console.log("Berat Rhodey termasuk kekurangan berat badan")
+		}else if(beratIdeal() >= 18.5 && beratIdeal() <= 24.9){
+			console.log("Berat Rhodey termasuk ideal")
+		}else if(beratIdeal() >= 25 && beratIdeal() <= 29.9){
+			console.log("Berat Rhodey termasuk kelebihan berat badan")
+		}else{
+			console.log("Berat Rhodey termasuk obesitas")
+		}
+	</script>
+</body>
+</html>
